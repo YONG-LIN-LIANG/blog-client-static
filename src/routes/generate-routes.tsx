@@ -52,7 +52,7 @@ export const renderRoutes = (mainRoutes: LayoutProps[]) => {
                           <>
                             <Helmet>
                               <meta charSet="utf-8" />
-                              <title>Steven's Portfolio - {title}</title>
+                              <title>Steven Tech - {title}</title>
                             </Helmet>
                             <Component />
                           </>

@@ -82,11 +82,11 @@ Looking forward to connecting and building something amazing together! 🚀
         subject: "ELT Pipeline Design",
         project_list: [
           {
-            thumbnail: "/project/dataengineer/datalake_pipeline.png",
+            thumbnail: "./project/dataengineer/datalake_pipeline.png",
             content: `## **Data Lake Pipeline Design**
 ---
 ### **Data Lake ELT Pipeline Demo**
-<img src="/project/dataengineer/datalake_pipeline.png" />
+<img src="./project/dataengineer/datalake_pipeline.png" />
 
 ---
 
@@ -163,17 +163,17 @@ This project involved designing and implementing a scalable data lake pipeline t
         subject: "Power BI Projects",
         project_list: [
           {
-            thumbnail: "/project/dataengineer/tasmanian_project_home.png",
+            thumbnail: "./project/dataengineer/tasmanian_project_home.png",
             content: `## **Tasmanian Employment Dashboard**
 ---
 ### **Dashboard Screenshots**
 <div class="grid grid-cols-2">
-<img src="/project/dataengineer/tasmanian_project_occu.png" />
-<img src="/project/dataengineer/tasmanian_project_workforce.png" />
-<img src="/project/dataengineer/tasmanian_project_indu.png" />
-<img src="/project/dataengineer/tasmanian_project_region.png" />
-<img src="/project/dataengineer/tasmanian_project_explorer.png" />
-<img src="/project/dataengineer/tasmanian_project_note.png" />
+<img src="./project/dataengineer/tasmanian_project_occu.png" />
+<img src="./project/dataengineer/tasmanian_project_workforce.png" />
+<img src="./project/dataengineer/tasmanian_project_indu.png" />
+<img src="./project/dataengineer/tasmanian_project_region.png" />
+<img src="./project/dataengineer/tasmanian_project_explorer.png" />
+<img src="./project/dataengineer/tasmanian_project_note.png" />
 </div>
 
 

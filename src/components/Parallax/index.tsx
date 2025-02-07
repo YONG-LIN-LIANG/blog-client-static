@@ -18,6 +18,11 @@ const Parallax = () => {
   const btn = useRef(null);
 
   useEffect(() => {
+    const screenWidth = window.innerWidth;
+    const sunMoveRatio = screenWidth < 1200 ? 2.5 : 1.4;
+    const mountain2MoveRatio = screenWidth < 640 ? 10 : 30;
+    const mountain3MoveRatio = screenWidth < 1200 ? 10 : 20;
+    const copyMoveRatio = screenWidth < 640 ? -170 : -250;
     let ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
       var tl = gsap.timeline({
@@ -36,14 +41,14 @@ const Parallax = () => {
       tl.to(
         mountain3.current,
         {
-          y: "-=80",
+          y: `-=${mountain3MoveRatio}`,
         },
         0
       );
       tl.to(
         mountain2.current,
         {
-          y: "-=30",
+          y: `-=${mountain2MoveRatio}`,
         },
         0
       );
@@ -88,14 +93,14 @@ const Parallax = () => {
       tl.to(
         sun.current,
         {
-          y: "+=210",
+          y: 210 * sunMoveRatio,
         },
         0
       );
       tl.to(
         copy.current,
         {
-          y: "-250%",
+          y: `${copyMoveRatio}%`,
           opacity: 1,
         },
         0
@@ -112,63 +117,70 @@ const Parallax = () => {
   }, []);
 
   return (
-    <div className="parallax-outer">
+    <div className="overflow-hidden">
       <div
         ref={parallaxRef}
         style={{
           background: `linear-gradient(#0F2B9C, #673D7D ${background}%, #A74A67, #EDFC54 )`,
         }}
-        className="parallax"
+        className="parallax h-[110vh] w-full"
       >
         <img
           ref={mountain3}
-          className="mountain-3"
-          src="/parallax/mountain-3.svg"
+          className="bottom-0 z-[3] w-full"
+          src="./parallax/mountain-3.svg"
         />
         <img
           ref={mountain2}
-          className="mountain-2"
-          src="/parallax/mountain-2.svg"
+          className="bottom-[20px] z-[2] w-full"
+          src="./parallax/mountain-2.svg"
         />
         <img
           ref={mountain1}
-          className="mountain-1"
-          src="/parallax/mountain-1.svg"
+          className="bottom-[40px] z-[1] w-full"
+          src="./parallax/mountain-1.svg"
         />
         <img
           ref={sun}
-          className="sun"
-          src="/parallax/sun.svg"
+          className="absolute left-[50%] top-[40%] w-[40%] translate-x-[-50%]
+            translate-y-[-50%]"
+          src="./parallax/sun.svg"
         />
         <img
           ref={cloudsBottom}
-          className="clouds-bottom"
-          src="/parallax/cloud-bottom.svg"
+          className="bottom-0 w-full"
+          src="./parallax/cloud-bottom.svg"
         />
         <img
           ref={cloudsLeft}
-          className="clouds-left"
-          src="/parallax/clouds-left.svg"
+          className="left-0 w-[20%]"
+          src="./parallax/clouds-left.svg"
         />
         <img
           ref={cloudsRight}
-          className="clouds-right"
-          src="/parallax/clouds-right.svg"
+          className="right-0 w-[20%]"
+          src="./parallax/clouds-right.svg"
         />
         <img
           ref={stars}
-          className="stars"
-          src="/parallax/stars.svg"
+          className="-top-[550px] left-0 w-full"
+          src="./parallax/stars.svg"
         />
 
         <div
           ref={copy}
           className="copy"
         >
-          <h1>Steven the Data Engineer Portfolio</h1>
-          <span className="mb-[50px]">
-            Data Engineer skilled in AWS | Python | SQL | Docker | PowerBI |
-            CI/CD | Git
+          <h1
+            className="xlg:text-[60px] text-center text-[30px] sm:text-[35px]
+              md:text-[45px]"
+          >
+            Steven <br className="block sm:hidden" />
+            the Data Engineer Portfolio
+          </h1>
+          <span className="mb-[50px] mt-[30px] text-center">
+            Data Engineer skilled in <br className="block sm:hidden" /> AWS |
+            Python | SQL | Docker | PowerBI | CI/CD | Git
           </span>
           <button
             ref={btn}

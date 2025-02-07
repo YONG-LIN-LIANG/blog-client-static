@@ -40,20 +40,23 @@ const Footer = () => {
   ]);
   return (
     <section
-      className="relative mt-[150px] h-[400px] overflow-hidden py-[100px]"
+      className="relative mt-[150px] h-[520px] overflow-hidden py-[100px]
+        sm:h-[400px]"
     >
       <div
-        className="glow-effect moon absolute left-0 right-0 mx-auto h-[1000px]
-          w-[1000px] rounded-full"
+        className="glow-effect moon absolute -left-[200px] -right-[200px]
+          mx-auto h-[1000px] w-[700px] rounded-full md:left-0 md:right-0
+          lg:w-[1000px]"
       ></div>
 
       <ul
-        className="absolute bottom-0 left-0 right-0 top-[200px] z-[1000] m-auto
-          grid w-[500px] grid-cols-2 gap-8 text-center"
+        className="absolute left-0 right-0 top-[150px] z-[1000] mx-auto grid
+          w-[200px] gap-8 text-center sm:top-[200px] sm:w-[300px] md:w-[500px]
+          md:grid-cols-2"
       >
-        {footerInfo.map((i) => {
+        {footerInfo.map((i, idx) => {
           return (
-            <li>
+            <li key={idx}>
               <h4
                 className="h-[25px] bg-[url('/flag.svg')] bg-cover bg-center
                   bg-no-repeat uppercase"

@@ -26,15 +26,23 @@ const ShowcaseWindow = () => {
   });
   const media_list = [
     {
-      component: <LinkedinFilled className="text-[30px] text-[#E7B345]" />,
+      component: (
+        <LinkedinFilled className="text-[20px] text-[#E7B345] sm:text-[30px]" />
+      ),
       url: "https://www.linkedin.com/in/yonglin-liang",
     },
     {
-      component: <MediumSquareFilled className="text-[30px] text-[#E7B345]" />,
+      component: (
+        <MediumSquareFilled
+          className="text-[20px] text-[#E7B345] sm:text-[30px]"
+        />
+      ),
       url: "https://medium.com/@steven841221",
     },
     {
-      component: <GithubFilled className="text-[30px] text-[#E7B345]" />,
+      component: (
+        <GithubFilled className="text-[20px] text-[#E7B345] sm:text-[30px]" />
+      ),
       url: "https://github.com/YONG-LIN-LIANG",
     },
   ];
@@ -51,21 +59,23 @@ const ShowcaseWindow = () => {
 
   return (
     <section
-      className="mx-auto w-[900px] overflow-hidden rounded-[10px]
-        bg-[#D9D9D9]/[.7] text-[#000]"
+      className="mx-auto w-[90%] overflow-hidden rounded-[10px]
+        bg-[#D9D9D9]/[.7] text-[#000] lg:w-[900px]"
     >
       <div
         id="project"
         className="flex items-center justify-between bg-[#202243]/[.8]"
       >
         <ul className="flex">
-          {tabInfo.list.map((i) => (
+          {tabInfo.list.map((i, idx) => (
             <li
+              key={idx}
               onClick={() =>
                 setTabInfo((prev) => ({ ...prev, activate: i.id }))
               }
-              className={`flex-center h-[60px] w-[120px] cursor-pointer
-              uppercase ${i.id === tabInfo.activate ? "bg-[#D9D9D9]/[.7]" : ""}`}
+              className={`flex-center h-[40px] w-[100px] cursor-pointer
+              text-[14px] uppercase sm:h-[60px] sm:w-[120px] sm:text-[18px]
+              ${i.id === tabInfo.activate ? "bg-[#D9D9D9]/[.7]" : ""}`}
             >
               {i.name}
             </li>
@@ -77,7 +87,8 @@ const ShowcaseWindow = () => {
               key={idx}
               href={i.url}
               target="_blank"
-              className="[&:not(:first-child)]:ml-[12px]"
+              className="[&:not(:first-child)]:ml-[4px]
+                sm:[&:not(:first-child)]:ml-[12px]"
             >
               {i.component}
             </a>
@@ -86,8 +97,11 @@ const ShowcaseWindow = () => {
       </div>
 
       {tabInfo.activate === 0 ? (
-        portfolio.data_engineer.subject_list.map((i) => (
-          <div className="p-[40px]">
+        portfolio.data_engineer.subject_list.map((i, idx) => (
+          <div
+            key={idx}
+            className="p-[40px]"
+          >
             <h2
               className="mb-[20px] text-center text-[20px] font-extrabold
                 tracking-wide"
@@ -96,11 +110,16 @@ const ShowcaseWindow = () => {
             </h2>
             <div
               className={`mt-[50px] grid ${
-                i.project_list.length > 1 ? "grid-cols-2" : "mx-auto w-[500px]"
+                i.project_list.length > 1
+                  ? "grid-cols-2"
+                  : "mx-auto w-[100%] sm:w-[500px]"
                 } gap-12`}
             >
-              {i.project_list.map((p) => (
-                <div className="flex flex-col items-center">
+              {i.project_list.map((p, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center"
+                >
                   <div className="aspect-[6/4] overflow-hidden rounded-[20px]">
                     <img
                       className="h-full w-full object-cover"

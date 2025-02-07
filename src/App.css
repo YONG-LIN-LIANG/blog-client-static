@@ -21,64 +21,12 @@ body {
   color: var(--secondaryColor);
 }
 
-.parallax-outer {
-  overflow: hidden;
-}
-
 .parallax {
-  height: 110vh;
-  width: 100%;
   position: relative;
 }
 
 .parallax img {
   position: absolute;
-}
-
-.mountain-3,
-.mountain-2,
-.mountain-1 {
-  width: 100%;
-  bottom: 0;
-  z-index: 3;
-}
-
-.mountain-2 {
-  bottom: 20px;
-  z-index: 2;
-}
-
-.mountain-1 {
-  bottom: 40px;
-  z-index: 1;
-}
-
-.sun {
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-}
-
-.clouds-left {
-  left: 0;
-  width: 20%;
-}
-
-.clouds-right {
-  right: 0;
-  width: 20%;
-}
-
-.clouds-bottom {
-  bottom: 0px;
-  width: 100%;
-}
-
-.stars {
-  top: -550px;
-  left: 0;
-  width: 100%;
 }
 
 .copy {
@@ -87,17 +35,13 @@ body {
   left: 0;
   right: 0;
   transform: translate(0, 50%);
-  z-index: 0;
+  z-index: 1000;
   color: var(--secondaryColor);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 0;
-}
-
-.copy h1 {
-  font-size: 4rem;
 }
 
 .copy button {
@@ -163,6 +107,16 @@ body {
 }
 
 @layer utilities {
+  @keyframes moveWheel {
+    0% {
+      opacity: 0;
+      transform: translateY(35px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
   @keyframes pulseShadow {
     0%,
     100% {
@@ -186,20 +140,8 @@ body {
   .moon {
     @apply rounded-full bg-gradient-to-b from-gray-400 to-gray-700 bg-cover bg-no-repeat shadow-2xl;
   }
-}
 
-/* .about {
-  color: var(--secondaryColor);
-  padding-left: 10%;
-  padding-bottom: 20%;
+  .animate-moveWheel {
+    animation: moveWheel 1.8s linear infinite;
+  }
 }
-
-.about h2 {
-  color: var(--secondaryColor);
-  font-size: 5rem;
-}
-
-.about p {
-  margin-top: 20px;
-  width: 50%;
-} */

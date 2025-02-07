@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #282a57;
+  --secondaryColor: #e4e4e4;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+.parallax-outer {
+  overflow: hidden;
+}
+
+.parallax {
+  height: 110vh;
+  width: 100%;
+  position: relative;
+}
+
+.parallax img {
+  position: absolute;
+}
+
+.mountain-3,
+.mountain-2,
+.mountain-1 {
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.mountain-2 {
+  bottom: 20px;
+  z-index: 2;
+}
+
+.mountain-1 {
+  bottom: 40px;
+  z-index: 1;
+}
+
+.sun {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.clouds-left {
+  left: 0;
+  width: 20%;
+}
+
+.clouds-right {
+  right: 0;
+  width: 20%;
+}
+
+.clouds-bottom {
+  bottom: 0px;
+  width: 100%;
+}
+
+.stars {
+  top: -550px;
+  left: 0;
+  width: 100%;
+}
+
+.copy {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  transform: translate(0, 50%);
+  z-index: 0;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.copy h1 {
+  font-size: 4rem;
+}
+
+.copy button {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 1rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.aboutme h2,
+.main_box h2 {
+  @apply text-[24px];
+}
+
+.aboutme hr,
+.main_box hr {
+  @apply my-[1rem];
+}
+
+.project_block {
+  @apply my-[20px] rounded-[20px] bg-[#ccc]/[.8] p-[10px];
+}
+
+.project_block h3,
+.main_box h3 {
+  @apply text-[20px] font-bold;
+}
+
+.project_block h4 {
+  @apply font-semibold;
+}
+
+.project_block h4 ~ span,
+.project_block h4 ~ ul,
+.main_box ul {
+  @apply inline-block pl-[20px];
+}
+.main_box ul span {
+  @apply font-semibold;
+}
+.project_block h4 ~ ul,
+.main_box ul {
+  @apply list-disc;
+}
+
+.main_box img {
+  @apply mx-auto my-[20px] w-[80%];
+}
+
+.personal_info {
+  @apply mb-[20px];
+}
+
+.personal_info li + li {
+  @apply my-[5px];
+}
+
+@layer utilities {
+  @keyframes pulseShadow {
+    0%,
+    100% {
+      box-shadow:
+        4px 4px 40px 40px rgba(255, 255, 255, 0.4),
+        inset 10px 10px 30px rgba(0, 0, 0, 0.3),
+        inset -10px -10px 30px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+      box-shadow:
+        4px 4px 50px 50px rgba(255, 255, 255, 0.2),
+        inset 15px 15px 40px rgba(0, 0, 0, 0.5),
+        inset -10px -10px 20px rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .glow-effect {
+    @apply animate-[pulseShadow_10s_ease-in-out_infinite] shadow-[4px_4px_40px_40px_rgba(255,255,255,0.7)];
+  }
+
+  .moon {
+    @apply rounded-full bg-gradient-to-b from-gray-400 to-gray-700 bg-cover bg-no-repeat shadow-2xl;
+  }
+}
+
+/* .about {
+  color: var(--secondaryColor);
+  padding-left: 10%;
+  padding-bottom: 20%;
+}
+
+.about h2 {
+  color: var(--secondaryColor);
+  font-size: 5rem;
+}
+
+.about p {
+  margin-top: 20px;
+  width: 50%;
+} */

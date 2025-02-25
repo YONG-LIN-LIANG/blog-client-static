@@ -476,18 +476,83 @@ A game to help players explore their potential capabilities.
 ---
 
 ### **Links and Resources**
-<a class="decoration-solid text-[#4A90E2]" href="https://d1z029jewfsj8v.cloudfront.net" target="_blank">Website Link</a>`},{thumbnail:"./project/webdeveloper/ys_01.webp",content:`## **Autograph**
+<a class="decoration-solid text-[#4A90E2]" href="https://d1z029jewfsj8v.cloudfront.net" target="_blank">Website Link</a>`},{thumbnail:"./project/webdeveloper/ys/ys_01.webp",content:`## **Ynso Course Purchase System**
 ---
 ### **Page Screenshots**
 <div class="grid grid-cols-2">
-<img src="./project/webdeveloper/fs/fs_01.webp" />
-<img src="./project/webdeveloper/fs/fs_02.webp" />
-<img src="./project/webdeveloper/fs/fs_03.webp" />
-<img src="./project/webdeveloper/fs/fs_04.webp" />
-<img src="./project/webdeveloper/fs/fs_05.webp" />
-<img src="./project/webdeveloper/fs/fs_06.webp" />
-<img src="./project/webdeveloper/fs/fs_07.webp" />
-<img src="./project/webdeveloper/fs/fs_08.webp" />
+<img src="./project/webdeveloper/ys/ys_01.webp" />
+<img src="./project/webdeveloper/ys/ys_02.webp" />
+<img src="./project/webdeveloper/ys/ys_03.webp" />
+<img src="./project/webdeveloper/ys/ys_04.webp" />
+<img src="./project/webdeveloper/ys/ys_05.webp" />
+<img src="./project/webdeveloper/ys/ys_06.webp" />
+<img src="./project/webdeveloper/ys/ys_07.webp" />
+<img src="./project/webdeveloper/ys/ys_08.webp" />
+<img src="./project/webdeveloper/ys/ys_09.webp" />
+<img src="./project/webdeveloper/ys/ys_10.webp" />
+</div>
+
+
+---
+
+### **Overview**
+
+The Ynso Course Purchase System allows users to purchase courses online, providing services not only for visitors and students but also for teachers. Teachers can log into the system to check their appointments with students. 
+
+---
+
+### **Technologies Used**
+<ul>
+  <li><span>Front-End:</span> Nuxt.js, Node.js, Tailwind CSS</li>
+  <li><span>Backend:</span> Spring Boot</li>
+  <li><span>Database:</span> MySQL</li>
+  <li><span>Containerization:</span> Docker</li>
+</ul>
+
+---
+
+### **Project Goals**
+<ul>
+  <li>Allowed visitors and students to purchase courses with tutors securely.</li>
+  <li>Teachers can log in the system and manage their schedule for students to book tutoring seats.</li>
+  <li>Worked with another system called Ynso Booking System which provides feature of booking course seats.</li>
+  <li>Allowed potential tutor talents to register as a tutor.</li>
+</ul>
+
+---
+
+### **Approach and Methodology**
+<ul>
+  <li><span>Responsive Design:</span> Feature with desktop-first approach, seamless experience across all devices, adaptive layouts and components.</li>
+  <li><span>Dynamic Content:</span> Implemented front-end dynamic content rendering through Spring Boot backend APIs.</li>
+  <li><span>Modern UI/UX:</span> Tutor section in the home page has animation to stand out when checking details of the tutor.</li>
+  <li><span>Server Proxy:</span> Set up the Nuxt.js server as a proxy to prevent client-side requests from hitting the backend services directly.</li>
+  <li><span>User Security:</span> Leveraged JWT (Access Tokens and Refresh Tokens) to update users' credentials periodically.</li>
+</ul>
+
+---
+
+### **Results and Impact**
+
+- This product is helpful for marketing team to promote their classes easily.
+- By leveraging containerization, it lowers the management costs of deploying applications and infrastructure.
+- This service provides the capability to purchase and take courses online, reducing the limitations of geography.
+
+---
+
+### **Links and Resources**
+<a class="decoration-solid text-[#4A90E2]" href="https://www.ynso.com.tw/online/" target="_blank">Website Link</a>`}]},{subject:"Personal Projects",project_list:[{thumbnail:"./project/webdeveloper/ag/ag_01.webp",content:`## **Autograph**
+---
+### **Page Screenshots**
+<div class="grid grid-cols-2">
+<img src="./project/webdeveloper/ag/ag_01.webp" />
+<img src="./project/webdeveloper/ag/ag_02.webp" />
+<img src="./project/webdeveloper/ag/ag_03.webp" />
+<img src="./project/webdeveloper/ag/ag_04.webp" />
+<img src="./project/webdeveloper/ag/ag_05.webp" />
+<img src="./project/webdeveloper/ag/ag_06.webp" />
+<img src="./project/webdeveloper/ag/ag_07.webp" />
+<img src="./project/webdeveloper/ag/ag_08.webp" />
 </div>
 
 
@@ -546,77 +611,8 @@ A game to help players explore their potential capabilities.
 ---
 
 ### **Links and Resources**
-<a class="decoration-solid text-[#4A90E2]" href="https://d1z029jewfsj8v.cloudfront.net" target="_blank">Website Link</a>`}]},{subject:"Personal Projects",project_list:[{thumbnail:"./project/webdeveloper/ag/ag_01.webp",content:`## **Autograph**
----
-### **Page Screenshots**
-<div class="grid grid-cols-2">
-<img src="./project/webdeveloper/fs/fs_01.webp" />
-<img src="./project/webdeveloper/fs/fs_02.webp" />
-<img src="./project/webdeveloper/fs/fs_03.webp" />
-<img src="./project/webdeveloper/fs/fs_04.webp" />
-<img src="./project/webdeveloper/fs/fs_05.webp" />
-<img src="./project/webdeveloper/fs/fs_06.webp" />
-<img src="./project/webdeveloper/fs/fs_07.webp" />
-<img src="./project/webdeveloper/fs/fs_08.webp" />
-</div>
-
-
----
-
-### **Overview**
-
-A game to help players explore their potential capabilities.
-
----
-
-### **Technologies Used**
-<ul>
-  <li><span>Front-End:</span> React.js, Redux, Typescript, Tailwind, Vite</li>
-  <li><span>Backend:</span> Python</li>
-  <li><span>AWS:</span> S3, API Gateway, Lambda(Python), DynamoDB</li>
-</ul>
-
----
-
-### **Project Goals**
-<ul>
-  <li>Turning the physic card product into online test format.</li>
-  <li>Working on the analysis based on the users' test records.</li>
-  <li>Gaining more exposure to potential clients by leveraging the product.</li>
-  <li>Further in-person career path consultant services after finishing this test.</li>
-</ul>
-
----
-
-### **Approach and Methodology**
-<ul>
-  <li><span>Responsive Design:</span> Feature with mobile-first approach, seamless experience across all devices, adaptive layouts and components.</li>
-  <li><span>Dynamic Content:</span> Test result showcase based on the game records; An immersive quiz experience with music accompaniment; Animated skill representations.</li>
-  <li><span>Modern UI/UX:</span> Feature with smooth entering page animation, Intuitive navigation, clean and professional design.</li>
-  <li><span>Cloud Service Integration:</span> Leveraging API Gateway for API Endpoint Setups, Lambda for backend development, DynamoDB for storing users' game record, and S3 for storing frontend project.</li>
-</ul>
-
----
-
-### **Results and Impact**
-
-- This product is available and useful in the government sector and in the events such as career fair.
-- Severless architecture require no infra maintainance cost, which cause less burden for small business.
-- Key company's employees are able to scrape needed information from cloud easily.
-- Test report can be the tool to analyze potential ability for the users.
-
----
-
-### **Key Learnings**
-
-- Designed a serverless architecture application with cost-efficiency benefits.
-- Learned how to generate profit at every stage of the product lifecycle.
-- Learned the relationship between cost management and the utilization of the tech stack.
-
----
-
-### **Links and Resources**
-<a class="decoration-solid text-[#4A90E2]" href="https://d1z029jewfsj8v.cloudfront.net" target="_blank">Website Link</a>`}]}]}},FL=({professional:e})=>{const t=ZT(),[n,r]=X.useState({activate:0,list:[{id:0,name:"Data Engineer"},{id:1,name:"Web Developer"},{id:2,name:"about"}]}),u=[{component:xe.jsx(gx,{className:"text-[20px] text-[#E7B345] sm:text-[30px]"}),url:"https://www.linkedin.com/in/yonglin-liang"},{component:xe.jsx(_x,{className:"text-[20px] text-[#E7B345] sm:text-[30px]"}),url:"https://medium.com/@steven841221"},{component:xe.jsx(mx,{className:"text-[20px] text-[#E7B345] sm:text-[30px]"}),url:"https://github.com/YONG-LIN-LIANG"}];X.useEffect(()=>{e==="w"?r(c=>({...c,activate:1})):e==="d"&&r(c=>({...c,activate:0}))},[]);const s=(c,f)=>f===0?c.data_engineer:c.web_developer,o=c=>{document.body.style.overflow="hidden",t(qA({type:"main",dialogName:"project",content:c}))};return xe.jsxs("section",{className:`mx-auto w-[90%] overflow-hidden rounded-[10px]
+<a class="decoration-solid text-[#4A90E2]" href="https://yong-lin-liang.github.io/sign-pdf/#/login" target="_blank">Website Link</a><br>
+<a class="decoration-solid text-[#4A90E2]" href="https://github.com/YONG-LIN-LIANG/sign-pdf" target="_blank">Repo Link</a>`}]}]}},FL=({professional:e})=>{const t=ZT(),[n,r]=X.useState({activate:0,list:[{id:0,name:"Data Engineer"},{id:1,name:"Web Developer"},{id:2,name:"about"}]}),u=[{component:xe.jsx(gx,{className:"text-[20px] text-[#E7B345] sm:text-[30px]"}),url:"https://www.linkedin.com/in/yonglin-liang"},{component:xe.jsx(_x,{className:"text-[20px] text-[#E7B345] sm:text-[30px]"}),url:"https://medium.com/@steven841221"},{component:xe.jsx(mx,{className:"text-[20px] text-[#E7B345] sm:text-[30px]"}),url:"https://github.com/YONG-LIN-LIANG"}];X.useEffect(()=>{e==="w"?r(c=>({...c,activate:1})):e==="d"&&r(c=>({...c,activate:0}))},[]);const s=(c,f)=>f===0?c.data_engineer:c.web_developer,o=c=>{document.body.style.overflow="hidden",t(qA({type:"main",dialogName:"project",content:c}))};return xe.jsxs("section",{className:`mx-auto w-[90%] overflow-hidden rounded-[10px]
         bg-[#D9D9D9]/[.7] text-[#000] lg:w-[900px]`,children:[xe.jsxs("div",{id:"project",className:"flex items-center justify-between bg-[#202243]/[.8]",children:[xe.jsx("ul",{className:"flex",children:n.list.map((c,f)=>xe.jsx("li",{onClick:()=>r(d=>({...d,activate:c.id})),className:`flex-center text-center h-[40px] w-[100px] cursor-pointer
               text-[14px] uppercase sm:h-[60px] sm:w-[120px] sm:text-[18px]
               ${c.id===n.activate?"bg-[#D9D9D9]/[.7]":""}`,children:c.name},f))}),xe.jsx("div",{className:"pr-[20px]",children:u.map((c,f)=>xe.jsx("a",{href:c.url,target:"_blank",className:`[&:not(:first-child)]:ml-[4px]

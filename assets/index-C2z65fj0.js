@@ -560,53 +560,49 @@ The Ynso Course Purchase System allows users to purchase courses online, providi
 
 ### **Overview**
 
-A game to help players explore their potential capabilities.
+An application provides an intuitive platform for creating signatures on a digital whiteboard. Users can easily upload documents that require signatures, enabling a streamlined signing process. Once the signatures are created and applied, users can download the completed documents, ensuring a seamless and efficient workflow for document management and signing. This app is designed to enhance productivity and simplify the signing process for both individuals and teams.
 
 ---
 
 ### **Technologies Used**
 <ul>
-  <li><span>Front-End:</span> React.js, Redux, Typescript, Tailwind, Vite</li>
-  <li><span>Backend:</span> Python</li>
-  <li><span>AWS:</span> S3, API Gateway, Lambda(Python), DynamoDB</li>
+  <li><span>Front-End:</span> React.js, Redux, Typescript, Tailwind CSS, Vite</li>
 </ul>
 
 ---
 
 ### **Project Goals**
 <ul>
-  <li>Turning the physic card product into online test format.</li>
-  <li>Working on the analysis based on the users' test records.</li>
-  <li>Gaining more exposure to potential clients by leveraging the product.</li>
-  <li>Further in-person career path consultant services after finishing this test.</li>
+<li>Developing an online platform that transforms the signature creation process into a user-friendly digital format.</li> 
+<li>Implementing features that analyze user interactions and signing patterns to enhance the signing experience.</li> 
+<li>Expanding market reach by promoting the app to potential clients, showcasing its efficiency and ease of use.</li> 
+<li>Providing personalized consulting services for users seeking assistance with document management and signing after using the app.</li> 
 </ul>
 
 ---
 
 ### **Approach and Methodology**
 <ul>
-  <li><span>Responsive Design:</span> Feature with mobile-first approach, seamless experience across all devices, adaptive layouts and components.</li>
+  <li><span>Responsive Design:</span> Feature with desktop-first approach, adaptive layouts and components.</li>
   <li><span>Dynamic Content:</span> Test result showcase based on the game records; An immersive quiz experience with music accompaniment; Animated skill representations.</li>
   <li><span>Modern UI/UX:</span> Feature with smooth entering page animation, Intuitive navigation, clean and professional design.</li>
-  <li><span>Cloud Service Integration:</span> Leveraging API Gateway for API Endpoint Setups, Lambda for backend development, DynamoDB for storing users' game record, and S3 for storing frontend project.</li>
+  <li><span>Deployment:</span> Leveraging the Github Page to deploy static application.</li>
 </ul>
 
 ---
 
 ### **Results and Impact**
 
-- This product is available and useful in the government sector and in the events such as career fair.
-- Severless architecture require no infra maintainance cost, which cause less burden for small business.
-- Key company's employees are able to scrape needed information from cloud easily.
-- Test report can be the tool to analyze potential ability for the users.
+- This app demonstrates how to build a fully static application with zero cost of deployment fees.
+- This app demonstrates how to build a small-scale product for local usage.
 
 ---
 
 ### **Key Learnings**
 
-- Designed a serverless architecture application with cost-efficiency benefits.
-- Learned how to generate profit at every stage of the product lifecycle.
-- Learned the relationship between cost management and the utilization of the tech stack.
+- The SVG animation is a great tool for UI/UX design.
+- Low cost deployment.
+- The user experience on mobile devices can be further improved.
 
 ---
 
